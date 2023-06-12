@@ -1,5 +1,5 @@
-.Button{
-    padding:5px 10px;
+.Button {
+    padding: 5px 10px;
     background-color: skyblue;
     color: white;
     font-weight: 700;
@@ -13,12 +13,17 @@
     margin-top: 5px;
 }
 
-.Button:hover{
+.Button:hover {
     box-shadow: 10px 10px 25px gray;
     border: 1px solid white;
 }
 
-.Button img{
+.clicked {
+    box-shadow: 5px 5px 25px gray !important;
+    border: 1px solid black !important;
+}
+
+.Button img {
     max-width: 24px;
     max-height: 24px;
 }
