@@ -8,7 +8,7 @@ const Button = (props) => {
     return (
         <button type={props.type} className={style.Button} onClick={(evt) => {
             if (undefined !== props.onClick && typeof props.onClick === 'function') {
-                props.onClick();
+                props.onClick('click');
             }
         }}>
             {props.children}
