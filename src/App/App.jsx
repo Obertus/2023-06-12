@@ -6,10 +6,10 @@ import Button from './components/ui/Button/Button';
 function App() {
   return (
     <div className="App">
-      <Button onClick={(unParamDeLenfnant) => {
+      <Button bgColor='green' onClick={(unParamDeLenfnant) => {
         console.log('envoyé par le parent', unParamDeLenfnant)
       }}><img src='/img/ok.jpg' alt='Ok'/> ok</Button>
-      <Button>cancel</Button>
+      <Button bgColor='red'>cancel</Button>
     </div>
   );
 }
