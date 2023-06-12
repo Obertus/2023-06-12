@@ -17,3 +17,8 @@
     box-shadow: 10px 10px 25px gray;
     border: 1px solid white;
 }
+
+.Button img{
+    max-width: 24px;
+    max-height: 24px;
+}
