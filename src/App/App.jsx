@@ -6,10 +6,14 @@ import Button from './components/ui/Button/Button';
 function App() {
   return (
     <div className="App">
-      <Button style={{display:'block', fontsize:'48pt'}} bgColor='green' onClick={(unParamDeLenfnant) => {
-        console.log('envoyé par le parent', unParamDeLenfnant)
-      }}><img src='/img/ok.jpg' alt='Ok'/> ok</Button>
-      <Button bgColor='red'>cancel</Button>
+      <Button
+        className='primary'
+        onClick={(unParamDeLenfnant) => {
+          console.log('envoyé par le parent', unParamDeLenfnant)
+        }}><img src='/img/ok.jpg' alt='Ok' /> ok</Button>
+      <Button
+        className='error'
+      >cancel</Button>
     </div>
   );
 }
