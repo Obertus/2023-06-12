@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
 const Button = (props) => {
     console.log("props : ", props)
     return (
-        <button style={{backgroundColor:props.bgColor}} type={props.type} className={style.Button} onClick={(evt) => {
+        <button style={{...props.style, backgroundColor:props.bgColor}} type={props.type} className={style.Button} onClick={(evt) => {
             if (undefined !== props.onClick && typeof props.onClick === 'function') {
                 props.onClick('click');
             }
@@ -20,6 +20,7 @@ Button.propTypes = {
     type: PropTypes.oneOf(['button', 'reset', 'submit']).isRequired,
     bgColor: PropTypes.string.isRequired,
     onClick: PropTypes.func,
+    style: PropTypes.object,
 }
 
 Button.defaultProps = {
