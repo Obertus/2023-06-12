@@ -3,6 +3,6 @@ import style from "./Button.module.css"
 
 const Button=(props)=>{
     console.log("props : ", props)
-    return <button className={style.Button}>{props.text}</button>
+    return <button className={style.Button}>{props.children}</button>
 }
 export default Button
