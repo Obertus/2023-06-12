@@ -6,6 +6,7 @@ import { MemeSVGViewer, emptyMeme } from 'orsys-tjs-meme'
 import MemeForm from './components/fonctional/MemeForm/MemeForm'
 import Header from './components/ui/Header/Header'
 import Footer from './components/ui/Footer/Footer'
+import datas from "./db.json"
 
 const App = () => {
   return (
@@ -14,9 +15,8 @@ const App = () => {
         <Header />
         <NavBar />
         <FlexH1Grow>
-          <div>hello</div>
-          {/* <MemeSVGViewer name={emptyMeme} image={undefined} basePath='' /> */}
-          <MemeForm />
+          <MemeSVGViewer meme={emptyMeme} image={undefined} basePath='' />
+          <MemeForm images={datas?.images}/>
         </FlexH1Grow>
         <Footer/>
       </FlexV3Grow>
