@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import style from './FlexV3Grow.module.css'
+import style from './FlexV3grow.module.css'
 
 const FlexV3Grow = (props) => {
   return (
@@ -8,7 +8,7 @@ const FlexV3Grow = (props) => {
   )
 }
 
-FlexV3Grow.PropTypes = {
+FlexV3Grow.propTypes = {
   children: PropTypes.any.isRequired,
 }
 

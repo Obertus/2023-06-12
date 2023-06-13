@@ -8,7 +8,7 @@ const NavBar = (props) => {
   )
 }
 
-NavBar.PropTypes = {
+NavBar.propTypes = {
   children: PropTypes.any.isRequired,
 }
 

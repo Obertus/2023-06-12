@@ -8,7 +8,7 @@ const MemeThumbnail = (props) => {
   )
 }
 
-MemeThumbnail.PropTypes = {
+MemeThumbnail.propTypes = {
   children: PropTypes.any.isRequired,
 }
 

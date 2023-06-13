@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import style from './FlexH1Grow.module.css'
+import style from './FlexH1grow.module.css'
 
 const FlexH1Grow = (props) => {
   return (
@@ -8,7 +8,7 @@ const FlexH1Grow = (props) => {
   )
 }
 
-FlexH1Grow.PropTypes = {
+FlexH1Grow.propTypes = {
   children: PropTypes.any.isRequired,
 }
 

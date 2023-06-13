@@ -8,7 +8,7 @@ const Footer = (props) => {
   )
 }
 
-Footer.PropTypes = {
+Footer.propTypes = {
   children: PropTypes.any.isRequired,
 }
 

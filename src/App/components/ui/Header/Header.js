@@ -8,7 +8,7 @@ const Header = (props) => {
   )
 }
 
-Header.PropTypes = {
+Header.propTypes = {
   children: PropTypes.any.isRequired,
 }
 

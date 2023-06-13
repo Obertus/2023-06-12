@@ -8,7 +8,7 @@ const TemplateName = (props) => {
   )
 }
 
-TemplateName.PropTypes = {
+TemplateName.propTypes = {
   children: PropTypes.any.isRequired,
 }
 
