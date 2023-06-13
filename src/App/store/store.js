@@ -1,9 +1,13 @@
-import { configureStore } from "@reduxjs/toolkit"
+import { configureStore, combineReducers } from "@reduxjs/toolkit"
 import currentReducer from './currentSlice'
+import ressourcesReducer from './ressourcesSlice'
 
 const store = configureStore({
-    reducer:currentReducer,
-    devTools:true
+    reducer: combineReducers({
+        ressources: ressourcesReducer,
+        current: currentReducer
+    }),
+    devTools: true
 })
 
 export default store
