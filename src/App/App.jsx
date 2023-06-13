@@ -8,9 +8,8 @@ import Header from './components/ui/Header/Header'
 import Footer from './components/ui/Footer/Footer'
 
 const App = () => {
-  console.log(`emptyMeme`, emptyMeme);
   return (
-    <div style="App">
+    <div className="App">
       <FlexV3Grow>
         <Header />
         <NavBar />
