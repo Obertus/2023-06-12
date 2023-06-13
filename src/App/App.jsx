@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import FlexV3Grow from './components/layout/FlexV3grow/FlexV3grow'
 import NavBar from './components/ui/NavBar/NavBar'
 import FlexH1Grow from './components/layout/FlexH1grow/FlexH1grow'
@@ -7,18 +7,35 @@ import MemeForm from './components/fonctional/MemeForm/MemeForm'
 import Header from './components/ui/Header/Header'
 import Footer from './components/ui/Footer/Footer'
 import datas from "./db.json"
+const appInitialState = {
+  images: [],
+  memes: [],
+  current: emptyMeme
+}
 
 const App = () => {
+  const [state, setstate] = useState(appInitialState)
+
+  useEffect(() => {
+    setstate({ ...state, ...datas })
+  }, [])
+
   return (
     <div className="App">
       <FlexV3Grow>
         <Header />
         <NavBar />
         <FlexH1Grow>
-          <MemeSVGViewer meme={emptyMeme} image={undefined} basePath='' />
-          <MemeForm images={datas?.images}/>
+          <MemeSVGViewer
+            meme={state.current}
+            image={state.images.find(img =>{
+              return img.id===state.current.imageId
+            })}
+            basePath=''
+          />
+          <MemeForm images={datas?.images} current={state.current}/>
         </FlexH1Grow>
-        <Footer/>
+        <Footer />
       </FlexV3Grow>
     </div>
   )

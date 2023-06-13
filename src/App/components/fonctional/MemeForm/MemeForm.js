@@ -15,6 +15,9 @@ const MemeForm = (props) => {
       console.log(`composant MemeForm demonté`);
     };
   }, [])
+  useEffect(() => {
+    setstate(props.current)
+  }, [props])
   return (
     <div className={styles.MemeForm} data-testid="MemeForm">
       <form><label htmlFor="titre">
@@ -114,7 +117,19 @@ const MemeForm = (props) => {
 };
 
 MemeForm.propTypes = {
-  images: PropTypes.array.isRequired
+  images: PropTypes.array.isRequired,
+  current: PropTypes.shape({
+    id: PropTypes.number,
+    titre: PropTypes.string.isRequired,
+    text: PropTypes.string.isRequired,
+    x: PropTypes.number.isRequired,
+    y: PropTypes.number.isRequired,
+    fontWeight: PropTypes.string.isRequired,
+    fontSize: PropTypes.number.isRequired,
+    color: PropTypes.string.isRequired,
+    underline: PropTypes.bool.isRequired,
+    italic: PropTypes.bool.isRequired,
+  }).isRequired
 
 };
 
