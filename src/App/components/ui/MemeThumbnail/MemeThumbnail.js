@@ -8,8 +8,8 @@ const MemeThumbnail = (props) => {
   )
 }
 
-MemeThumbnail.propTypes = {
-  children: PropTypes.any.isRequired,
-}
+// MemeThumbnail.propTypes = {
+//   // children: PropTypes.any.isRequired,
+// }
 
 export default MemeThumbnail

@@ -8,8 +8,8 @@ const Footer = (props) => {
   )
 }
 
-Footer.propTypes = {
-  children: PropTypes.any.isRequired,
-}
+// Footer.propTypes = {
+//   // children: PropTypes.any.isRequired,
+// }
 
 export default Footer
