@@ -13,6 +13,9 @@ const Button = (props) => {
         if (isClicked) {
             setTimeout(() => setisClicked(false), 800)
         }
+        return {
+            // clearTimeout(400)
+        }
     }, [isClicked])
 
 
