@@ -9,15 +9,15 @@ const Button = (props) => {
     const [isClicked, setisClicked] = useState(false)
 
     useEffect(() => {
-        console.log(`value post clicked`, isClicked);
+        let to = undefined;
+        // console.log(`value post clicked`, isClicked);
         if (isClicked) {
             setTimeout(() => setisClicked(false), 800)
         }
-        return {
-            // clearTimeout(400)
+        return () => {
+            clearTimeout(to);
         }
     }, [isClicked])
-
 
     // console.log("props : ", props)
     return (
@@ -45,7 +45,7 @@ Button.propTypes = {
     onClick: PropTypes.func,
     // style: PropTypes.object,
     className: PropTypes.oneOf(['primary', 'error']),
-    isClicked:PropTypes.bool,
+    isClicked: PropTypes.bool,
 }
 
 Button.defaultProps = {
