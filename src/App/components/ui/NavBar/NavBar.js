@@ -1,9 +1,9 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import style from './NavBar.module.css'
 import { Navbar, Nav, Container } from 'react-bootstrap'
 import '../../../../../node_modules/bootstrap/dist/css/bootstrap.css'
-//facultatif si non utilisations des js de botsstrap
+//facultatif si non utilisation des js de botsstrap
 // import '../../../../../node_modules/bootstrap/dist/js/bootstrap.js'
 
 const NavBar = (props) => {
@@ -22,8 +22,8 @@ const NavBar = (props) => {
   )
 }
 
-NavBar.propTypes = {
-  // children: PropTypes.any.isRequired,
-}
+// NavBar.propTypes = {
+//   // children: PropTypes.any.isRequired,
+// }
 
 export default NavBar
