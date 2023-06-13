@@ -28,12 +28,17 @@ const App = () => {
         <FlexH1Grow>
           <MemeSVGViewer
             meme={state.current}
-            image={state.images.find(img =>{
-              return img.id===state.current.imageId
+            image={state.images.find(img => {
+              return img.id === state.current.imageId
             })}
             basePath=''
           />
-          <MemeForm images={datas?.images} current={state.current}/>
+          <MemeForm
+            images={datas?.images}
+            current={state.current}
+            onMemeChange={(meme) => {
+              setstate({ ...state, current: meme })
+            }} />
         </FlexH1Grow>
         <Footer />
       </FlexV3Grow>
