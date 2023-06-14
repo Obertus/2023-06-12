@@ -16,7 +16,7 @@ const store=configureStore({
 //  store.dispatch(update(emptyMeme))
 // store.dispatch({type:'current/update', payload:{titre:'coucou'}})
 // store.dispatch({type:'current/clear'})
-store.dispatch(fetchAllRessources())
+// store.dispatch(fetchAllRessources())
 // store.dispatch(saveCurrent({
 //     titre: "titi",
 //     text: "",
