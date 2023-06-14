@@ -1,6 +1,7 @@
-import { MemeSVGViewer, emptyMeme } from 'orsys-tjs-meme'
+import { emptyMeme } from 'orsys-tjs-meme'
 import { useEffect, useState } from 'react'
 import { MemeFormStoredConnected } from './components/fonctional/MemeForm/MemeForm'
+import { MemeSVGViewerStoredConnected } from './components/fonctional/MemeSVGViewer/MemeSVGViewerStoredConnected'
 import FlexH1Grow from './components/layout/FlexH1grow/FlexH1grow'
 import FlexV3Grow from './components/layout/FlexV3grow/FlexV3grow'
 import Footer from './components/ui/Footer/Footer'
@@ -27,13 +28,14 @@ const App = () => {
         <Header />
         <NavBar />
         <FlexH1Grow>
-          <MemeSVGViewer
+          {/* <MemeSVGViewer
             meme={state.current}
             image={state.images.find(img => {
               return img.id === state.current.imageId
             })}
             basePath=''
-          />
+          /> */}
+          <MemeSVGViewerStoredConnected basePath=''/>
           <MemeFormStoredConnected/>
         </FlexH1Grow>
         <Footer />
@@ -43,3 +45,4 @@ const App = () => {
 }
 
 export default App
+
