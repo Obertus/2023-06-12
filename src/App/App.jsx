@@ -7,7 +7,6 @@ import MemeForm from './components/fonctional/MemeForm/MemeForm'
 import Header from './components/ui/Header/Header'
 import Footer from './components/ui/Footer/Footer'
 import datas from "./db.json"
-import store from './store/store'
 
 const appInitialState = {
   images: [],
