@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react'
-import FlexV3Grow from './components/layout/FlexV3grow/FlexV3grow'
-import NavBar from './components/ui/NavBar/NavBar'
-import FlexH1Grow from './components/layout/FlexH1grow/FlexH1grow'
 import { MemeSVGViewer, emptyMeme } from 'orsys-tjs-meme'
-import MemeForm from './components/fonctional/MemeForm/MemeForm'
-import Header from './components/ui/Header/Header'
+import { useEffect, useState } from 'react'
+import { MemeFormStoredConnected } from './components/fonctional/MemeForm/MemeForm'
+import FlexH1Grow from './components/layout/FlexH1grow/FlexH1grow'
+import FlexV3Grow from './components/layout/FlexV3grow/FlexV3grow'
 import Footer from './components/ui/Footer/Footer'
+import Header from './components/ui/Header/Header'
+import NavBar from './components/ui/NavBar/NavBar'
 import datas from "./db.json"
 
 const appInitialState = {
@@ -34,12 +34,7 @@ const App = () => {
             })}
             basePath=''
           />
-          <MemeForm
-            images={datas?.images}
-            current={state.current}
-            onMemeChange={(meme) => {
-              setstate({ ...state, current: meme })
-            }} />
+          <MemeFormStoredConnected/>
         </FlexH1Grow>
         <Footer />
       </FlexV3Grow>
