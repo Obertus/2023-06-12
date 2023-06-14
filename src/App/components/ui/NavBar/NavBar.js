@@ -1,9 +1,7 @@
-import React from 'react'
 // import PropTypes from 'prop-types'
-import style from './NavBar.module.css'
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import '../../../../../node_modules/bootstrap/dist/css/bootstrap.css'
-import { Link } from 'react-router-dom'
+import style from './NavBar.module.css'
 //facultatif si non utilisation des js de botsstrap
 // import '../../../../../node_modules/bootstrap/dist/js/bootstrap.js'
 import { LinkContainer } from "react-router-bootstrap"

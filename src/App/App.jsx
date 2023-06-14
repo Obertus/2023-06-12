@@ -10,6 +10,7 @@ import NavBar from './components/ui/NavBar/NavBar'
 import Editor from './pages/Editor'
 import { fetchAllRessources } from './store/ressourcesSlice'
 import store from './store/store'
+import  { MemeThumbnailStoredConnected } from './components/ui/MemeThumbnail/MemeThumbnail'
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path='/' element={<div><h1>Hello a tous</h1></div>} />
-          <Route path='/thumbnail' element={<div>thumbnail</div>} />
+          <Route path='/thumbnail' element={<MemeThumbnailStoredConnected />} />
           {/* <Route path='/meme' element={<FlexH1Grow>
             <MemeSVGViewerStoredConnected basePath='' />
             <MemeFormStoredConnected />
