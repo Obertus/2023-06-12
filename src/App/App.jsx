@@ -1,18 +1,15 @@
 import { useEffect } from 'react'
-import { MemeFormStoredConnected } from './components/fonctional/MemeForm/MemeForm'
-import { MemeSVGViewerStoredConnected } from './components/ui/MemeSVGViewer/MemeSVGViewerStoredConnected'
-import FlexH1Grow from './components/layout/FlexH1grow/FlexH1grow'
-import FlexV3Grow from './components/layout/FlexV3grow/FlexV3grow'
-import Footer from './components/ui/Footer/Footer'
-import Header from './components/ui/Header/Header'
-import NavBar from './components/ui/NavBar/NavBar'
-import store from './store/store'
-import { fetchAllRessources } from './store/ressourcesSlice'
 import {
   Route,
   Routes
 } from 'react-router-dom'
+import FlexV3Grow from './components/layout/FlexV3grow/FlexV3grow'
+import Footer from './components/ui/Footer/Footer'
+import Header from './components/ui/Header/Header'
+import NavBar from './components/ui/NavBar/NavBar'
 import Editor from './pages/Editor'
+import { fetchAllRessources } from './store/ressourcesSlice'
+import store from './store/store'
 
 
 const App = () => {
