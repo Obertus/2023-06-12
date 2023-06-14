@@ -11,7 +11,8 @@ export const MemeSVGViewerStoredConnected = (props) => {
     })
 
     return (
-        <MemeSVGViewer {...props}
+        <MemeSVGViewer
+            {...props}
             {...storeProps}
         />)
 }
